@@ -1,0 +1,42 @@
+class Ball{
+	var ball;
+	var ballX;
+	var ballY;
+	var ballVX;
+	var ballVY;
+	var ballActive;
+
+	constructor(x, y){
+		this.ball = new cc.Sprite.create(res.Ball_To_Fire);
+        this.ball.setAnchorPoint(cc.p(0.5, 0.5));
+        this.ballX = x;
+        this.ballY = y;
+        this.ball.setPosition(cc.p(ballX, ballY));
+        this.ballVX = 0;
+        this.ballVY = 0;
+	}
+
+	changePosition(x, y){
+		this.ballX = x;
+		this.ballY = y;
+		this.ball.setPosition(cc.p(ballX, ballY));
+	}
+
+	setVelocity(vX, vY){
+		this.ballVX = vX;
+		this.ballVY = vY;
+	}
+
+	changeDirectionX(){
+		this.ballVX = -this.ballVX;
+	}
+
+	changeDirectionY(){
+		this.ballVY = -this.ballVY;
+	}
+
+	stop(){
+		this.ballVX = 0;
+		this.ballVY = 0;
+	}
+}
