@@ -14,6 +14,9 @@
     "jsList" : [
         "src/resource.js",
         "src/app.js",
+        "src/game.js",
+        "src/staticBG.js",
+        "src/scrollingBG.js",
         "classes/Ball.js"
     ]
 }

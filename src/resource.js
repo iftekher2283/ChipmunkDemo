@@ -4,6 +4,8 @@ var res = {
     Fruit_2 : "res/orange.png",
     Fruit_3 : "res/cherries.png",
     Fruit_4 : "res/crate.png",
+    Background : "res/background.png",
+    Ground : "res/ground.png",
 };
 
 var g_resources = [];
